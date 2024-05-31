@@ -465,7 +465,7 @@ nav ul li a:hover{
     position: absolute;
     bottom: 0.5rem;
     width: 120%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modalSideA{
