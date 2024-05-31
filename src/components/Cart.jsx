@@ -75,10 +75,9 @@ function Cart() {
       return
     }
     var sessionExists = JSON.parse(localStorage.getItem('oseleTicketsUser'))
-    if (sessionExists) {
+    if ( sessionExists ) {
       try {
-        var newCartData = [cart, sessionExists, total]
-        // https://osele-tickets-server.onrender.com
+        var newCartData = [cart, sessionExists.user, total]
         var response = await fetch('https://osele-tickets-server.onrender.com/checkout', FetchRequestOptions('POST', newCartData))
       if (response.status === 200) {
         const Toast = Swal.mixin({
